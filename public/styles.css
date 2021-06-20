@@ -1,0 +1,174 @@
+/***************************************body************************************/
+body{
+    margin:0;
+    text-align: center;
+    font-family: serif;
+    background-color: #FFEAC9;
+}
+/******************************** navigation bar*********************************/
+.navbar{
+    color:white;
+    background-color: orange;
+    list-style-type: none;
+    padding-left: 1rem;
+    margin:0;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navitems{
+display: inline;
+position: absolute;
+right:5%;
+display: flex;
+}
+.navitem{
+ display: inline;
+ margin: 2rem 2rem 2rem 1rem;
+}
+.navitem a{
+    text-decoration:none;
+    color:white;
+}
+
+.navitem a:hover{
+    color:#005A8D;
+}
+/******************************** table *********************************/
+#accounts{
+    padding-top: 2rem;
+    background-color: #FFEAC9;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+span a{
+    border-radius: 10px;
+    border-style: solid;
+    border-color:  orange;
+    font-size:1.5rem;
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    padding:0.35rem 3rem;
+    margin:0 4rem 0;
+    font-weight: bold;
+}
+span a:hover {
+    color:orange;
+    background-color:transparent;
+    border-style: dotted;
+}
+#user h1:first-child{
+    margin-top:3rem;
+}
+#user h1:last-child{
+    margin-bottom:2rem;
+}
+table{
+    padding:0 0 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    right: auto;
+    display: flex;
+
+    color:black;
+
+}
+tbody{
+    margin-left: auto;
+    margin-right: auto;
+}
+th{
+    padding:1rem 1rem;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+td{
+    padding:0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+tr,th,td{
+    border:2px solid black;
+}
+/******************************payment***********************************/
+#payment{
+background: transparent;
+margin-top:8%;
+}
+#payhead{
+    margin-top:2rem;
+    font-size: 2rem;
+    font-weight: bold
+}
+.payment{
+    margin-top: 2rem;
+}
+.payment input:not(.payment input:last-child){
+    display:block;
+    width:22rem;
+    height:2.3rem;
+    padding:0 2.5rem 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    border:2px solid orange;
+    border-radius:2rem;
+    outline:none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+input::-webkit-input-placeholder {
+    font-size:1.2rem;
+    position: relative;
+    top:5%;
+    text-align: center;
+}
+.payment input:last-child{
+    margin-top: 1rem;
+    width:7rem;
+    height:2.5rem;
+    font-size:1.2rem;
+    font-weight: bold;
+    color:white;
+    background-color:orange;
+    border-radius: 1rem;
+    border: 3px solid orange;
+
+}
+.payment input:last-child:hover{
+    color:black;
+    background: transparent;
+    border: dotted orange;
+}
+#or{
+    background-color: orange;
+    padding:0 0.5rem 0.5rem;
+    font-size: 3.5rem;
+    display: inline;
+    border: 0.25rem dotted red;
+    border-color: black;
+    border-radius:3rem;
+}
+/******************************** footer *********************************/
+footer{
+    position: absolute;
+    bottom: 0;
+    min-width:100%;
+    background-color: orange;
+    font-size: 1.7rem;
+    padding:1rem 0;
+}
+footer p{
+    margin-top: 0;
+    font-size: 1.2rem;
+    color:white;
+}
+footer a{
+    color:white;
+    margin:auto 1rem;
+}
+footer a:hover{
+    color:#005A8D;
+}

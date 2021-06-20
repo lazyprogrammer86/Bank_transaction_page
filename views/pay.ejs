@@ -1,0 +1,17 @@
+<%-include("partials/header")-%>
+<section id="payment">
+    <h1 id="payhead">Payment Gateway</h1>
+    <h1>Available balance : <%=avblnce%></h1>
+    <h3 style="color:red"><%=paywarn%></h3>
+    <form class="payment" action="/pay" method="post">
+        <input list="Account Numbers" name="accNum" placeholder="Recipient's Account Number" required>
+        <datalist id="Account Numbers">
+            <%details.forEach((detail)=>{%>
+            <option value="<%=detail.accNumber%>">
+                <%});%>
+        </datalist>
+        <input type="number" name="amount" placeholder="Enter the amount"min="100" max="<%=avblnce%>"  step="100"required>
+        <input type="submit" name="button" value="Pay">
+    </form>
+</section>
+<%-include("partials/footer")-%>
